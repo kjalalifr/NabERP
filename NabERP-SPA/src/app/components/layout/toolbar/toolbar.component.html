@@ -1,0 +1,25 @@
+<mat-toolbar color='primary'>
+  <button mat-mini-fab color="accent">
+    <mat-icon>home</mat-icon>
+  </button>
+  
+  <span>NABAFZAR</span>
+  <button mat-button >Home</button>
+  <button mat-button [matMenuTriggerFor]="productMenu">Products</button>
+  <mat-menu #productMenu="matMenu">
+    <button mat-menu-item>SMARTEC</button>
+    <button mat-menu-item>CARAVAN</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="serviceMenu">Services</button>
+  <mat-menu #serviceMenu="matMenu">
+    <button mat-menu-item>Software</button>
+    <button mat-menu-item>Hardware</button>
+  </mat-menu>
+  <button mat-button >About</button>
+  <button mat-button >Contact</button>
+  <span class="maintoolbar-spacer"></span>
+  <button mat-mini-fab color="accent">
+    <mat-icon>people_outline</mat-icon>
+  </button>
+</mat-toolbar>
+

@@ -1,0 +1,5 @@
+.vscoode
+bin
+obj
+*.db
+
